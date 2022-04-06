@@ -69,3 +69,5 @@ print(thislist)
 
 thislist.pop()
 print(thislist)
+#-Del keyword also delete specific items or the entire list
+#-Clear method empties the list
