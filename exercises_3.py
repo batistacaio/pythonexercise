@@ -62,4 +62,3 @@ myset.update(mytuple)
 print(myset)
 #Remove by using the remove() or discard() methods (discard doest not return error if not exists)
 #Important set methods in https://www.w3schools.com/python/python_sets_methods.asp
-
