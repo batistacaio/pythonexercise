@@ -4,4 +4,5 @@ altura = 1.78
 peso = 84
 imc = peso / altura ** 2
 
-print("O nome é", nome, "e tem", idade, "anos de idade, o seu IMC é", imc)
+print(f"Meu nome é {nome}, tenho {idade} anos e meu IMC é {imc}")
+
