@@ -43,3 +43,7 @@ while True:
         print(num_1 / num_2)
     elif operador == "*":
         print(num_1 * num_2)
+        
+    sair = input("Deseja sair? [s/n]: ")
+    if sair == "s":
+        break
