@@ -1,4 +1,4 @@
-contador = 1
+''' contador = 1
 acumulador = 1
 
 while contador <= 10:
@@ -23,4 +23,15 @@ while counter < tamanho_frase:
         nova_string += letra
     counter += 1
     
-print(nova_string)
+print(nova_string) '''
+
+texto = "O rato roeu a roupa do rei de roma"
+novo_texto = ""
+
+for letra in texto:
+    if letra == "r":
+        novo_texto += letra.upper()
+    else:
+        novo_texto += letra
+
+print(novo_texto)
