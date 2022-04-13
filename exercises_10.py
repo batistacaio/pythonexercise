@@ -21,3 +21,10 @@ for valor in lista1:
         palavra = valor
 
 print(f"A palavra que mais apareceu é {palavra} ({contagem}x)")
+
+# ----------------
+
+lista = ["A", "B", "C", "D"]
+novalista = ", ".join(lista)
+
+print(novalista)
