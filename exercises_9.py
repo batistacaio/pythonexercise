@@ -13,11 +13,12 @@ frase = "O rato roeu a roupa do rei de roma"
 tamanho_frase = len(frase)
 counter = 0
 nova_string = ""
+input_usuario = input("Qual letra deseja colocar maíuscula: ")
 
 while counter < tamanho_frase:
     letra = frase[counter]
-    if letra == "r":
-        nova_string += "R"
+    if letra == input_usuario:
+        nova_string += input_usuario.upper()
     else:
         nova_string += letra
     counter += 1
