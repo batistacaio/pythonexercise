@@ -2,7 +2,7 @@ secreto = "paralelepipedo"
 digitados = []
 tentativas = 0
 
-print(f"Jogo de adivinhação! Adivinhe a palavra secreta. Ela tem {len(secreto)} letras")
+print(f"Jogo de adivinhação! Adivinhe a palavra secreta, você tem 10 tentativas. Ela tem {len(secreto)} letras")
 
 while True:
     letra = input("Digite uma letra ou a palavra secreta: ")
