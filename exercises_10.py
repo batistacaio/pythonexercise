@@ -27,6 +27,14 @@ print(f"A palavra que mais apareceu é {palavra} ({contagem}x)")
 lista = ["A", "B", "C", "D"]
 novalista = ", ".join(lista)
 
-print(novalista)
+# Enumerate
 
-# Testing branches
+for index, valor in enumerate(lista1):
+    print(index, valor)
+    
+# Desempacotamento
+
+lista_nomes = ["Joao", "Maria", "Jose", 1, 2, 3, 4, 5, 6, 7]
+
+n1, n2, n3, *lista_restante = lista_nomes
+print(n2, lista_restante)
