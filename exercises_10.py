@@ -58,3 +58,8 @@ idade = 17
 de_maior = (idade >= 18)
 
 print("Pode entrar") if de_maior else print("Não pode entrar")
+
+# Condicional com OR
+
+nome = input("Digite o seu nome: ")
+print(nome or "Você não digitou nada")
