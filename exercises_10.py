@@ -38,3 +38,23 @@ lista_nomes = ["Joao", "Maria", "Jose", 1, 2, 3, 4, 5, 6, 7]
 
 n1, n2, n3, *lista_restante = lista_nomes
 print(n2, lista_restante)
+
+# Invertendo valores de variaveis
+
+x = 10
+y = "Caio"
+
+x, y = y, x
+
+print(f"x={x} e y={y}")
+
+# Operação ternária
+
+logged_user = False
+
+print("Usuário logado") if logged_user else print("Usuário precisa logar")
+
+idade = 17
+de_maior = (idade >= 18)
+
+print("Pode entrar") if de_maior else print("Não pode entrar")
