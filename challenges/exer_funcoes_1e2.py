@@ -32,3 +32,14 @@ def fizzbuzz(val):
         return val
 
 print(fizzbuzz(15))
+
+# -- 5
+
+def introducing():
+    name = input("Digite o seu nome: ")
+    surname = input("Digite o seu sobrenome: ")
+    age = input("Digite sua idade: ")
+    profession = input("Digite sua profissão: ")
+    print(f"Olá {name} {surname}! Você tem {age} anos e é {profession}.")
+
+print(introducing())
