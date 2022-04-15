@@ -15,21 +15,18 @@ print(numsum(4, 3, 5))
 # -- 3
 
 def somapercentual(valor, percentual):
-    valorpercentual = percentual / 100
-    valoradicional = valor * valorpercentual
-    somavalores = valor + valoradicional
-    return somavalores
+    return valor + (valor * percentual / 100)
 
 print(somapercentual(200, 20))
 
 # -- 4
 
 def fizzbuzz(val):
-    if not val % 5 and val % 3:
+    if val % 5 == 0 and val % 3 == 0:
         return "BuzzFizz"
-    elif not val % 3:
+    elif val % 3 == 0:
         return "Fizz"
-    elif not val % 5:
+    elif val % 5 == 0:
         return "Buzz"
     else:
         return val
