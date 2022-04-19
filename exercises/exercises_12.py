@@ -26,3 +26,21 @@ for v in d1.values():
 
 for c, v in d1.items():
     print(c, v)
+    
+# - Exemplo pratico
+
+clientes = {
+    "cliente1": {
+        "nome": "Caio",
+        "sobrenome": "Batista"
+    },
+    "cliente2": {
+        "nome": "Natan",
+        "sobrenome": "Sales"
+    }
+}
+
+for clientes_k, clientes_v in clientes.items():
+    print(f"Exibindo {clientes_k}")
+    for dados_k, dados_v in clientes_v.items():
+        print(f"\t{dados_k} = {dados_v}")
