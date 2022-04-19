@@ -15,5 +15,14 @@ d1["Chave2"] = "Valor2_alterado"
 
 # - Resgatar valores
 
-print("Valor_alterado" in d1.values()) # Retorna true
+print("Valor_alterado" in d1.values()) # Retorna true /// .keys() para as chaves
 
+d1["Chave3"] = "Valor_chave3"
+
+for v in d1.values():
+    print(v)
+    
+# - Acessar chave e valor
+
+for c, v in d1.items():
+    print(c, v)
