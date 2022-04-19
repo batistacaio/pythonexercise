@@ -30,3 +30,13 @@ perguntas = {
         "resposta_certa": "a"
     },
 }
+
+for pk, pv in perguntas.items():
+    print(f"{pk}: {pv['pergunta']}")
+    for rk, rv in pv["respostas"].items():
+        print(f"{rk}: {rv}")
+    resposta = input("Digite a resposta: ")
+    if resposta == pv["resposta_certa"]:
+        print("Você acertou!")
+    else:
+        print("Você errou.")
