@@ -11,5 +11,13 @@ print(s1)
 
 s2 = {1, 2, 3, 4, 5}
 s3 = {4, 5, 6, 7, 8, 9}
+
 set_unido = s2 | s3
+set_intersec = s2 & s3
+set_diff = s2 - s3
+set_symdiff = s2 ^ s3
+
 print(set_unido)
+print(set_intersec)
+print(set_diff)
+print(set_symdiff)
