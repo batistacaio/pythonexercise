@@ -12,5 +12,9 @@ lnomes = [v.replace("a", "@") for v in nomes]
 print(lnomes)
 
 numlist = list(range(100))
-filterlist = [v for v in numlist if v % 2 == 0]
-print(filterlist)
+
+divbytwo = [v for v in numlist if v % 2 == 0]
+print(divbytwo)
+
+divbythreeandfive = [v for v in numlist if v % 3 == 0 if v % 5 == 0]
+print(divbythreeandfive)
