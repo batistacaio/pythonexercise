@@ -18,3 +18,11 @@ print(divbytwo)
 
 divbythreeandfive = [v for v in numlist if v % 3 == 0 if v % 5 == 0]
 print(divbythreeandfive)
+
+withelse = [v if v % 6 == 0 else "Não é divisivel" for v in divbythreeandfive]
+print(withelse)
+
+# Encontrar todos os divisiveis por 3 e 8 na lista de 0 a 99
+
+newlist = [v if v % 3 == 0 and v % 8 == 0 else 0 for v in numlist]
+print(newlist)
