@@ -1,3 +1,5 @@
+import time
+
 # - Dict comprehension
 
 lista = [
@@ -13,3 +15,17 @@ print(upperdict)
 
 d1 = {f"chave_{x}": x**2 for x in range(5)}
 print(d1)
+
+# - Iteraveis, iteradores e geradores
+
+# Gerador
+
+def gera():
+    for n in range(100):
+        yield n
+        time.sleep(0.1)
+
+g = gera()
+
+for v in g:
+    print(v)
