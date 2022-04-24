@@ -29,3 +29,8 @@ g = gera()
 
 for v in g:
     print(v)
+
+# or
+
+gerador = (x for x in range(1000))
+print(gerador)
