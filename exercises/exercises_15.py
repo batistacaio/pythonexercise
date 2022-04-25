@@ -1,5 +1,5 @@
 import time
-from itertools import zip_longest, count
+from itertools import zip_longest, count, combinations
 
 # - Dict comprehension
 '''
@@ -46,13 +46,25 @@ cidades_estados = zip(indice, estados, cidades)
 
 for indice, estados, cidades in cidades_estados:
     print(indice, estados, cidades)
-'''
+
 
 # - Count
 
-contador = count(start=10)
+contador = count()
 
 for v in contador:
     print(v)
-    if v == 20:
+    if v == 10:
         break
+    
+# - Indexar lista
+
+nomes = ["Caio", "João", "Maria"]
+nomes = zip(contador, nomes)
+print(list(nomes))
+'''
+
+nomes = ["Caio", "João", "Maria", "José", "Miguel"]
+
+for nome in combinations(nomes, 2): # Desconsidera ordem, para considerar a ordem de itens, usar permutation. Para considerar cópias, usar product.
+    print(nome)
