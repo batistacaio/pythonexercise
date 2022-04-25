@@ -1,7 +1,7 @@
 import time
 
 # - Dict comprehension
-
+'''
 lista = [
     ('chave1', 'valor1'),
     ('chave2', 'valor2')
@@ -34,3 +34,13 @@ for v in g:
 
 gerador = (x for x in range(1000))
 print(gerador)
+'''
+# - Zip
+
+cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte"]
+estados = ["SP", "RJ", "BH"]
+
+cidades_estados = zip(cidades, estados)
+
+for valor in cidades_estados:
+    print(valor)
