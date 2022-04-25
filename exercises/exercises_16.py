@@ -18,7 +18,6 @@ alunos.sort(key=ordena)
 agrupado = groupby(alunos, ordena)
 
 for agrupador, valores_agrupados in agrupado:
-    print(f"Nota: {agrupador}")
-    for aluno in valores_agrupados:
-        print(aluno)
-    print()
+    quantidade = len(list(valores_agrupados))
+    for nota in agrupador:
+        print(f"{quantidade} alunos tiraram a nota {nota}")
