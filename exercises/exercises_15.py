@@ -35,7 +35,7 @@ for v in g:
 
 gerador = (x for x in range(1000))
 print(gerador)
-'''
+
 # - Zip
 
 indice = count()
@@ -46,3 +46,13 @@ cidades_estados = zip(indice, estados, cidades)
 
 for indice, estados, cidades in cidades_estados:
     print(indice, estados, cidades)
+'''
+
+# - Count
+
+contador = count(start=10)
+
+for v in contador:
+    print(v)
+    if v == 20:
+        break
