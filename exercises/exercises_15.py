@@ -1,5 +1,5 @@
 import time
-from itertools import zip_longest
+from itertools import zip_longest, count
 
 # - Dict comprehension
 '''
@@ -38,10 +38,11 @@ print(gerador)
 '''
 # - Zip
 
+indice = count()
 cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Uberlandia"]
 estados = ["SP", "RJ", "BH"]
 
-cidades_estados = zip_longest(estados, cidades, fillvalue="Estado")
+cidades_estados = zip(indice, estados, cidades)
 
-for valor in cidades_estados:
-    print(valor)
+for indice, estados, cidades in cidades_estados:
+    print(indice, estados, cidades)
