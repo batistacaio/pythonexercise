@@ -23,6 +23,3 @@ for agrupador, valores_agrupados in agrupado:
     for nota in agrupador:
         print(f"{quantidade} alunos tiraram a nota {nota}")
 '''
-
-# - Map, Filter e Reduce
-
