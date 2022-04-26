@@ -1,5 +1,6 @@
 from itertools import groupby
 
+'''
 # - Groupby
 
 alunos = [
@@ -21,3 +22,7 @@ for agrupador, valores_agrupados in agrupado:
     quantidade = len(list(valores_agrupados))
     for nota in agrupador:
         print(f"{quantidade} alunos tiraram a nota {nota}")
+'''
+
+# - Map, Filter e Reduce
+
