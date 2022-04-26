@@ -11,10 +11,17 @@ for preco in precos_produtos:
 # - Alterando valores sem modificar tabela original
     
 def aumenta_preco(p):
-    p["preco"] = p["preco"] * 1.05
+    p["preco"] = round(p["preco"] * 1.05, 2)
     return p
 
 novos_precos = map(aumenta_preco, produtos)
 
 for produto in novos_precos:
     print(produto)
+    
+# - Solicitar apenas nomes das pessoas
+
+nomes = map(lambda n: n["nome"], pessoas)
+
+for nome in nomes:
+    print(nome)
