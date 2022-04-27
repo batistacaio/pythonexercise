@@ -1,4 +1,4 @@
-from mymodule import person1
+from modules import person1
 
 #Modules
 
