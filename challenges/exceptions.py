@@ -20,3 +20,23 @@ try:
     print(divide(2, 0))
 except ValueError as error:
     print(error)
+    
+# - Utilizando condicionais
+
+def converte(valor):
+    try:
+        valor = int(valor)
+        return valor
+    except ValueError:
+        try:
+            valor = float(valor)
+            return valor
+        except ValueError:
+            pass
+
+while True:
+    numero = converte(input("Digite um número: "))
+    if numero is not None:
+        print(numero * 2)
+    else:
+        print("Digite um número válido")
