@@ -1,5 +1,5 @@
 from dados import pessoas, produtos, lista
-
+'''
 nova_lista = list(map(lambda x: x * 2, lista))
 print(nova_lista)
 
@@ -25,3 +25,11 @@ nomes = map(lambda n: n["nome"], pessoas)
 
 for nome in nomes:
     print(nome)
+'''  
+# - Filter
+
+busca_nome = filter(lambda n: n["nome"] == "Caio", pessoas)
+print(list(busca_nome))
+
+filtra_valor = filter(lambda v: v > 5, lista)
+print(list(filtra_valor))
