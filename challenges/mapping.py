@@ -1,4 +1,6 @@
 from dados import pessoas, produtos, lista
+from functools import reduce
+
 '''
 nova_lista = list(map(lambda x: x * 2, lista))
 print(nova_lista)
@@ -33,3 +35,8 @@ print(list(busca_nome))
 
 filtra_valor = filter(lambda v: v > 5, lista)
 print(list(filtra_valor))
+
+# - Reduce
+
+soma_precos = reduce(lambda acumulador, item: item["preco"] + acumulador, produtos, 0)
+print(round(soma_precos, 2))
