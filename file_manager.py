@@ -30,4 +30,6 @@ dict = {
 }
 
 dict_json = json.dumps(dict)
-print(dict_json)
+
+with open("dict.json", "w+") as file:
+    file.write(dict_json)
