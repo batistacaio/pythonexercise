@@ -1,3 +1,5 @@
+# w - write mode; r - read mode, a - append mode
+
 file = open("text.txt", "w+")
 file.write("Este é um arquivo de teste do Python\n")
 file.write("Esta é uma outra linha")
