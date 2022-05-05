@@ -10,6 +10,22 @@ if __name__ == "__main__":
     def add_list(task, lista):
         print("Tarefa adicionada")
         lista.append(task)
+        
+    def do_undo(todo_list, redo_list):
+        if not todo_list:
+            print("Nenhuma ação anterior a desfazer.")
+            return
+        last_todo = todo_list.pop()
+        redo_list.append(last_todo)
+    
+    def do_redo(todo_list, redo_list):
+        if not redo_list:
+            print("Nenhuma ação para refazer.")
+        try:
+            last_redo = todo_list.pop()
+        except IndexError:
+            pass
+        todo_list.append(last_redo)
     
     while True:
         todo = input("Digite uma tarefa para adicionar à lista ou uma das seguintes opções [undo, redo, ls]: ")
@@ -18,9 +34,9 @@ if __name__ == "__main__":
             show_list(todo_list)
             continue
         elif todo == "undo":
-            ...
+            do_undo(todo_list, redo_list)
             continue
         elif todo == "redo":
-            ...
+            do_redo(todo_list, redo_list)
             continue
         add_list(todo, todo_list)
