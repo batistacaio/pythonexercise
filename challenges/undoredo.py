@@ -23,9 +23,9 @@ if __name__ == "__main__":
             print("Nenhuma ação para refazer.")
         try:
             last_redo = todo_list.pop()
+            todo_list.append(last_redo)
         except IndexError:
             pass
-        todo_list.append(last_redo)
     
     while True:
         todo = input("Digite uma tarefa para adicionar à lista ou uma das seguintes opções [undo, redo, ls]: ")
