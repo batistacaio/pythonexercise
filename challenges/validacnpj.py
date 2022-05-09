@@ -4,16 +4,17 @@ REGRESSIVES = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
 
 def validate(cnpj):
     cnpj = remove_dots(cnpj)
-    if sequence(cnpj):
-        print("Sequência não é válida")
+    try:
+        if sequence(cnpj):
+            print("Sequências não são permitidas.")
+            return False
+    except:
         return False
-    n_cnpj = calc_digit(cnpj=cnpj, digit=1)
-    n_cnpj = calc_digit(cnpj=n_cnpj, digit=2)
-    
-    if n_cnpj == cnpj:
-        print("O cnpj é válido")
-    else:
-        print("O cnpj é inválido")
+    try:
+        n_cnpj = calc_digit(cnpj=cnpj, digit=1)
+        n_cnpj = calc_digit(cnpj=n_cnpj, digit=2)
+    except Exception as e:
+        return False
 
 def remove_dots(cnpj):
     return re.sub(r'[^0-9]', '', cnpj)
