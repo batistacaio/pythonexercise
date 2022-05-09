@@ -55,5 +55,6 @@ def generator():
     
     n_cnpj = calc_digit(cnpj=b_cnpj, digit=1)
     n_cnpj = calc_digit(cnpj=n_cnpj, digit=2)
-    
-    return n_cnpj
+    f_cnpj = f"{n_cnpj[:2]}.{n_cnpj[2:5]}.{n_cnpj[5:8]}/{n_cnpj[8:12]}-{n_cnpj[12:14]}"
+
+    print(f_cnpj)
