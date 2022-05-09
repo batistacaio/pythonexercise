@@ -1,4 +1,5 @@
 import re
+import random
 
 REGRESSIVES = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
 
@@ -43,4 +44,16 @@ def calc_digit(cnpj, digit):
     digit1 = 11 - (total % 11)
     digit1 = digit1 if digit1 <= 9 else 0
     
-    return f'{n_cnpj}{digit1}'    
+    return f'{n_cnpj}{digit1}'
+
+def generator():
+    first_cluster = random.randint(10, 99)
+    second_cluster = random.randint(100, 999)
+    third_cluster = random.randint(100, 999)
+    after_slash = '0001'
+    b_cnpj = f"{first_cluster}{second_cluster}{third_cluster}{after_slash}00"
+    
+    n_cnpj = calc_digit(cnpj=b_cnpj, digit=1)
+    n_cnpj = calc_digit(cnpj=n_cnpj, digit=2)
+    
+    return n_cnpj
