@@ -9,6 +9,9 @@ class Pessoa:
         if self.comendo:
             print(f"{self.nome} já está comendo.")
             return
+        if self.falando:
+            print(f"{self.nome} não pode comer falando.")
+            return
         print(f"{self.nome} está comendo {alimento}")
         self.comendo = True
         
@@ -22,6 +25,9 @@ class Pessoa:
     def falar(self, frase):
         if self.falando:
             print(f"{self.nome} já está falando.")
+            return
+        if self.comendo:
+            print(f"{self.nome} não pode falar comendo.")
             return
         print(f"{self.nome} está falando: '{frase}'")
         self.falando = True
